@@ -1,0 +1,33 @@
+# Merge this provider under the top-level providers mapping in
+# ~/.omp/agent/models.yml. The API key is a local placeholder; the tested
+# loopback server does not require cloud credentials.
+providers:
+  cyberfrost:
+    baseUrl: http://127.0.0.1:18080/v1
+    api: openai-completions
+    apiKey: cyberfrost-local
+    compat:
+      supportsStore: false
+      supportsDeveloperRole: false
+      supportsReasoningEffort: true
+      supportsUsageInStreaming: true
+      maxTokensField: max_tokens
+      supportsStrictMode: false
+      thinkingFormat: openai
+      requiresReasoningContentForToolCalls: true
+      requiresReasoningContentForAllAssistantTurns: true
+    models:
+      - id: cyberfrost
+        name: Cyber-Frost Qwen3.8 Flash Next TensorFold (local MTP)
+        reasoning: true
+        thinking:
+          mode: effort
+          efforts: [low, medium, high, xhigh]
+          defaultLevel: high
+          supportsDisplay: true
+          requiresEffort: false
+        input: [text]
+        contextWindow: 100000
+        maxTokens: 8192
+        supportsTools: true
+        cost: {input: 0, output: 0, cacheRead: 0, cacheWrite: 0}

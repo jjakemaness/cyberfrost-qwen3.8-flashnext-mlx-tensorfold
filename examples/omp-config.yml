@@ -1,0 +1,15 @@
+# Merge these settings into ~/.omp/agent/config.yml if you want every OMP
+# role to use the local Cyber-Frost server with cloud fallback disabled.
+modelRoles:
+  plan: cyberfrost/cyberfrost
+  slow: cyberfrost/cyberfrost
+  advisor: cyberfrost/cyberfrost
+  task: cyberfrost/cyberfrost
+  smol: cyberfrost/cyberfrost
+  tiny: cyberfrost/cyberfrost
+  commit: cyberfrost/cyberfrost
+  web: cyberfrost/cyberfrost
+  default: cyberfrost/cyberfrost
+
+retry:
+  modelFallback: false

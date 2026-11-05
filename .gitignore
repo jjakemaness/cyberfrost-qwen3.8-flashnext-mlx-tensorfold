@@ -1,0 +1,17 @@
+.DS_Store
+
+# Model weights, caches, and generated artifacts
+*.safetensors
+*.gguf
+*.mlx
+models/
+checkpoints/
+hf-cache/
+conversion-output/
+results/raw/
+
+# Local configuration and secrets
+.env
+*.local.yml
+*.local.yaml
+*.local.json
