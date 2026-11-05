@@ -47,7 +47,7 @@ Use the native Homebrew binary explicitly if an older Python `tensorfold` comman
 ## Download the model
 
 ```bash
-brew install huggingface-cli
+brew install hf
 hf download \
   choppedgarlic/CYBER-FROST-Qwen3.8-Flash-Next-TensorFold-MLX-8bit \
   --local-dir "$HOME/models/CYBER-FROST-Qwen3.8-Flash-Next-TensorFold-MLX-8bit"
